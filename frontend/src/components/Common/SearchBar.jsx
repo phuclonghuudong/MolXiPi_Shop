@@ -9,6 +9,12 @@ const SearchBar = () => {
     setIsOpen(!isOpen);
   };
 
+  const handleSearch = (e) => {
+    e.preventDefault();
+    console.log("Search Form: ", searchTerm);
+    setIsOpen(false);
+  };
+
   return (
     <div
       className={`flex items-center justify-center w-full transition-all duration-300 ${
@@ -16,7 +22,10 @@ const SearchBar = () => {
       }`}
     >
       {isOpen ? (
-        <form className="relative flex items-center justify-center w-full">
+        <form
+          onSubmit={handleSearch}
+          className="relative flex items-center justify-center w-full"
+        >
           <div className="relative w-1/2">
             <input
               type="text"
