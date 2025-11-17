@@ -13,3 +13,18 @@
 .bg-rabbit-red {
   background-color: var(--rabbit-red);
 }
+
+/* Webkit Scrollbar */
+.custom-scroll::-webkit-scrollbar {
+  height: 6px;
+  width: 100%;
+}
+
+.custom-scroll::-webkit-scrollbar-track {
+  background: transparent !important;
+}
+
+.custom-scroll::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.35); /* màu thanh */
+  border-radius: 100px;
+}
