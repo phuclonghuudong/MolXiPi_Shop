@@ -1,5 +1,5 @@
-const FilterSidebar = () => {
+const FilterSideBar = () => {
   return <div>FilterSidebar</div>;
 };
 
-export default FilterSidebar;
+export default FilterSideBar;

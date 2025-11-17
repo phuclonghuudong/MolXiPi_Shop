@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import { FaFilter } from "react-icons/fa";
-import FilterSidebar from "../components/Products/FilterSideBar";
+import FilterSidebar from "../components/Products/FilterSidebar";
 
 const CollectionPage = () => {
   const [products, setProducts] = useState([]);
