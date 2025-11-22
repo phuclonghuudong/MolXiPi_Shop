@@ -1,6 +1,7 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { Toaster } from "sonner";
 import UserLayout from "./components/Layout/UserLayout";
+import ProductDetails from "./components/Products/ProductDetails";
 import CollectionPage from "./pages/CollectionPage";
 import Home from "./pages/Home";
 import Login from "./pages/Login";
@@ -18,6 +19,7 @@ function App() {
           <Route path="register" element={<Register />} />
           <Route path="profile" element={<Profile />} />
           <Route path="collection/:collection" element={<CollectionPage />} />
+          <Route path="product/:id" element={<ProductDetails />} />
         </Route>
 
         <Route>{/* Admin Layout */}</Route>
