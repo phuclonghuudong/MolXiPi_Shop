@@ -1,10 +1,12 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { Toaster } from "sonner";
+import Checkout from "./components/Cart/Checkout";
 import UserLayout from "./components/Layout/UserLayout";
 import ProductDetails from "./components/Products/ProductDetails";
 import CollectionPage from "./pages/CollectionPage";
 import Home from "./pages/Home";
 import Login from "./pages/Login";
+import OrderConfirmationPage from "./pages/OrderConfirmationPage";
 import Profile from "./pages/Profile";
 import Register from "./pages/Register";
 
@@ -20,6 +22,11 @@ function App() {
           <Route path="profile" element={<Profile />} />
           <Route path="collection/:collection" element={<CollectionPage />} />
           <Route path="product/:id" element={<ProductDetails />} />
+          <Route path="checkout" element={<Checkout />} />
+          <Route
+            path="order-confirmation"
+            element={<OrderConfirmationPage />}
+          />
         </Route>
 
         <Route>{/* Admin Layout */}</Route>
