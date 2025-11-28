@@ -60,6 +60,12 @@ const NavBar = () => {
 
         {/* Right - Icons */}
         <div className="flex items-center space-x-4">
+          <Link
+            to={"/admin"}
+            className="block bg-black px-2 py-1 rounded text-xs text-white"
+          >
+            Admin
+          </Link>
           <Link to={"/"} className="hover:text-black">
             <HiOutlineUser className="h-6 w-6 text-gray-700" />
           </Link>
